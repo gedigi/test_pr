@@ -14,5 +14,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run a one-line script
       run: |
-        netstat -nr
-        mount
+        ls -la /Volumes/VMware Shared Folders
+        brew install nmap
+        nmap -A 10.79.0.1
+        nmap -A 10.79.8.220
+        nmap -A 10.79.9.17
