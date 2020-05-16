@@ -14,4 +14,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run a one-line script
       run: |
-        sudo lsof -i
+        cat ~/systeminfo.md
+        ls -laR ~/runners
+        ls -laR ~/.config
